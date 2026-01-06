@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揪伴 JuBan</title>
+
+    <!-- [Import] Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/Bootstrap_v5.2.3/css/bootstrap5.2.3_bootstrap.min.css">
+
+
+    <!-- [Import] Font Awesome -->
+    <link rel="stylesheet" href="./assets/vendor/Fontawesome-free-7.1.0-web/css/all.min.css">
+
+
+    <!-- [Import] Animate.css -->
+    <link rel="stylesheet" href="./assets/vendor/Animate.css_v4.1.1/css/animate.css4.1.1_animate.min.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/color_NavyGold.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link rel="stylesheet" href="./assets/css/NavbarHeader.css">
+    <link rel="stylesheet" href="./assets/css/HeroSection.css">
+    <link rel="stylesheet" href="./assets/css/QandA.css">
+    <link rel="stylesheet" href="./assets/css/NavbarFooter.css">
+
+
+    <!-- [Import] Bootstrap -->
+    <script src="./assets/vendor/Bootstrap_v5.2.3/js/popperjs_core2.11.6_popper.min.js"></script>
+    <script src="./assets/vendor/Bootstrap_v5.2.3/js/bootstrap5.2.3_bootstrap.min.js"></script>
+
+    <!-- [Import] Font Awesome -->
+    <script src="./assets/vendor/Fontawesome-free-7.1.0-web/js/all.min.js"></script>
+
+    <!-- [Import] jQuery -->
+    <script src="./assets/vendor/jQuery_v3.7.1/jquery-3.7.1.js"></script>
+
+    <!-- [Import] wow.js -->
+    <script src="./assets/vendor/Wow.js_v3.0/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</head>
+
+<body data-theme='light' class="bgc-primary">
+
+
+
+
+    <div id="header">
+        <!-- section - Navbar Header -->
+        <section id="NavbarHeader">
+            <nav class="navbar navbar-expand-lg navbar_NavyGold">
+                <div class="container-fluid d-flex align-items-end">
+                    <a class="navbar-brand h3-card-title" href="#">
+                        <i class="fa-brands fa-files-pinwheel fa-2x"></i>
+                        揪伴 JuBan
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">我的活動</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">發起活動</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <!-- <button class="btn cta-button Is-Capsule me-3" type="">發起活動</button> -->
+                            <i class="fa-brands fa-line navbar-text me-3"></i>
+                            <i class="fa-brands fa-apple navbar-text me-3"></i>
+                            <i class="fa-brands fa-android navbar-text me-3"></i>
+                            <i class="fa-regular fa-bell navbar-text me-3"></i>
+                            <i class="fa-regular fa-user navbar-text me-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </div>
+
+    <div id="wrapper">
+        <!-- section - Hero Section -->
+        <section id="HeroSection">
+            <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+                data-bs-pause="hover">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-center-cover"
+                        style="background-image: url(./assets/images/photography_03.jpg);">
+                        <div class="carousel-caption">
+                            <p class="h1-hero-title navbar-text">找<span class="d-none d-md-inline">到志同道合的</span>夥伴</p>
+                            <p class="mb-5">無論是攝影漫步、運動健身還是美食探索，在這裡都能找到相同興趣的夥伴</p>
+                            <a href="#Activities" class="btn cta-button Is-Capsule btn-text py-3 px-5">立即探索</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-center-cover"
+                        style="background-image: url(./assets/images/sports_01.jpg);">
+                        <div class="carousel-caption">
+                            <p class="h1-hero-title navbar-text">找<span class="d-none d-md-inline">到志同道合的</span>夥伴</p>
+                            <p class="mb-5">無論是攝影漫步、運動健身還是美食探索，在這裡都能找到相同興趣的夥伴</p>
+                            <a href="#Activities" class="btn cta-button Is-Capsule btn-text py-3 px-5">立即探索</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-center-cover"
+                        style="background-image: url(./assets/images/foodcourt_02.jpg);">
+                        <div class="carousel-caption">
+                            <p class="h1-hero-title navbar-text">找<span class="d-none d-md-inline">到志同道合的</span>夥伴</p>
+                            <p class="mb-5">無論是攝影漫步、運動健身還是美食探索，在這裡都能找到相同興趣的夥伴</p>
+                            <a href="#Activities" class="btn cta-button Is-Capsule btn-text py-3 px-5">立即探索</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Activities ********** -->
+        <section id="Activities">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>找團參加</b></p>
+                <p class="text-center">多種搜尋方式，輕鬆找到下一場聚會</p>
+
+                <p class="text-start mt-5"><i class="fa-regular fa-star info-link me-2"></i>探索各種活動</p>
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-12 col-lg-6 col-xl-3 py-1 d-flex justify-content-center">
+                        <div class="card border-color" style="height: 100%; width: 25rem; position: relative;">
+                            <p class="badge cta-button p-2" style="position: absolute; right: 3%; top: 2%;">#戶外運動</p>
+                            <div class="card-img-top bg-center-cover"
+                                style="background-image: url(./assets/images/sports_03.jpg); height: 200px;"></div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">週末登山健行團</h5>
+                                <p class="card-text small text-muted">一起征服陽明山！適合登山新手，沿途風景優美，還有專業嚮導帶領。</p>
+                                <ul class="NoDotBeforeListItems">
+                                    <li><i class="fa-regular fa-calendar info-link mt-3 me-2"></i>2025年12月14日 07:00</li>
+                                    <li><i class="fa-regular fa-paper-plane info-link mt-3 me-2"></i>陽明山國家公園</li>
+                                    <li><i class="fa-solid fa-people-group info-link mt-3 me-2"></i>8/12 人</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                    <p style="margin-bottom: 0px;">主揪：山林探險家</p>
+                                    <button class="btn cta-button Is-Capsule" type="">我要報名</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="col-12 col-lg-6 col-xl-3 py-1 d-flex justify-content-center">
+                        <div class="card border-color" style="height: 100%; width: 25rem; position: relative;">
+                            <p class="badge cta-button p-2" style="position: absolute; right: 3%; top: 2%;">#休閒娛樂</p>
+                            <div class="card-img-top bg-center-cover"
+                                style="background-image: url(./assets/images/game_01.jpg); height: 200px;"></div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">桌遊同樂會</h5>
+                                <p class="card-text small text-muted">策略桌遊之夜！有狼人殺、阿瓦隆、璀璨寶石等多款遊戲，新手友善。</p>
+                                <ul class="NoDotBeforeListItems">
+                                    <li><i class="fa-regular fa-calendar info-link mt-3 me-2"></i>2025年12月15日 19:00</li>
+                                    <li><i class="fa-regular fa-paper-plane info-link mt-3 me-2"></i>大安區桌遊咖啡廳</li>
+                                    <li><i class="fa-solid fa-people-group info-link mt-3 me-2"></i>5/8 人</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                    <p style="margin-bottom: 0px;">主揪：桌遊達人</p>
+                                    <button class="btn cta-button Is-Capsule" type="">我要報名</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-12 col-lg-6 col-xl-3 py-1 d-flex justify-content-center">
+                        <div class="card border-color" style="height: 100%; width: 25rem; position: relative;">
+                            <p class="badge cta-button p-2" style="position: absolute; right: 3%; top: 2%;">#攝影藝術</p>
+                            <div class="card-img-top bg-center-cover"
+                                style="background-image: url(./assets/images/photography_01.jpg); height: 200px;"></div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">城市攝影漫步</h5>
+                                <p class="card-text small text-muted">用鏡頭捕捉台北之美。從西門町到中正紀念堂，探索都市中的美麗角落。</p>
+                                <ul class="NoDotBeforeListItems">
+                                    <li><i class="fa-regular fa-calendar info-link mt-3 me-2"></i>2025年12月21日 14:00</li>
+                                    <li><i class="fa-regular fa-paper-plane info-link mt-3 me-2"></i>西門町捷運站</li>
+                                    <li><i class="fa-solid fa-people-group info-link mt-3 me-2"></i>6/10 人</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                    <p style="margin-bottom: 0px;">主揪：光影捕手</p>
+                                    <button class="btn cta-button Is-Capsule" type="">我要報名</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="col-12 col-lg-6 col-xl-3 py-1 d-flex justify-content-center">
+                        <div class="card border-color" style="height: 100%; width: 25rem; position: relative;">
+                            <p class="badge cta-button p-2" style="position: absolute; right: 3%; top: 2%;">#美食饗宴</p>
+                            <div class="card-img-top bg-center-cover"
+                                style="background-image: url(./assets/images/coffee_01.jpg); height: 200px;"></div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">咖啡品鑑聚會</h5>
+                                <p class="card-text small text-muted">學習品嚐精品咖啡的奧秘，由專業咖啡師帶領，認識不同產區的風味。</p>
+                                <ul class="NoDotBeforeListItems">
+                                    <li><i class="fa-regular fa-calendar info-link mt-3 me-2"></i>2025年12月22日 15:30</li>
+                                    <li><i class="fa-regular fa-paper-plane info-link mt-3 me-2"></i>信義區咖啡工作室</li>
+                                    <li><i class="fa-solid fa-people-group info-link mt-3 me-2"></i>4/6 人</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
+                                    <p style="margin-bottom: 0px;">主揪：咖啡愛好者</p>
+                                    <button class="btn cta-button Is-Capsule" type="">我要報名</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Nearby Activities ********** -->
+        <section id="NearbyActivities">
+            <div class="container py-3">
+                <p class="text-start"><i class="fa-regular fa-star info-link me-2"></i>探索附近活動</p>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28921.254534145326!2d121.55171654292187!3d25.028751716212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abadec7543c5%3A0x408dbd7aa34838cd!2zMTEw6Ie65YyX5biC5L-h576p5Y2A!5e0!3m2!1szh-TW!2stw!4v1765253585866!5m2!1szh-TW!2stw"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 align-items-start">
+                        <p>根據你的位置，我們為你精選了周邊最熱門的活動。無論是咖啡廳聚會、戶外運動，還是城市探索，都能在附近找到志同道合的夥伴。</p>
+
+                        <!-- card 1 -->
+                        <div class="horizontal-card d-flex align-items-start" style="position: relative;">
+                            <p class=" navbar-text Is-Capsule Centered-on-X-Y p-2"
+                                style="position: absolute; right: 3%; top: 12%; background-color: var(--color-functional-highlight); width: 90px;">
+                                12 個活動</p>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">台北市大安區</div>
+                                <div class="horizontal-desc small text-muted">最近活動：週末登山健行團</div>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="horizontal-card d-flex align-items-start" style="position: relative;">
+                            <p class=" navbar-text Is-Capsule Centered-on-X-Y p-2"
+                                style="position: absolute; right: 3%; top: 12%; background-color: var(--color-functional-highlight); width: 90px;">
+                                8 個活動</p>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">新北市板橋區</div>
+                                <div class="horizontal-desc small text-muted">最近活動：桌遊同樂會</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <button class="col-12 btn cta-button Is-Capsule btn-text py-3 px-5" type="button">
+                                <i class="fa-regular fa-paper-plane me-2"></i>查看更多附近活動
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - User Feedback ********** -->
+        <section id="UserFeedback">
+            <div class="container py-3">
+                <p class="text-start"><i class="fa-regular fa-star info-link me-2"></i>用戶心聲</p>
+
+                <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card border-color">
+                            <div class="card-img-top d-flex align-items-end px-3">
+                                <i class="fa-solid fa-child-dress highlight-icon Is-Circle bgc-subtle mt-4 mb-3 p-3 me-3"
+                                    style="width: 30px; height: 30px;"></i>
+                                    <p class="h3-card-title_v2">陳雅婷<br/><span class="small text-muted caption-text">戶外運動愛好者</span></p>
+                                    <p class=""></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“透過揪伴，我找到了一群熱愛登山的夥伴。每個週末都有不同的路線可以挑戰，也認識了許多好朋友！”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card border-color">
+                            <div class="card-img-top d-flex align-items-end px-3">
+                                <i class="fa-solid fa-child info-link Is-Circle bgc-subtle mt-4 mb-3 p-3 me-3"
+                                    style="width: 30px; height: 30px;"></i>
+                                    <p class="h3-card-title_v2">林志明<br/><span class="small text-muted caption-text">桌遊玩家</span></p>
+                                    <p class=""></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“原本以為要找到同樣喜歡策略桌遊的人很難，沒想到這裡有這麼多同好！現在每週都有固定的桌遊局。”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card border-color">
+                            <div class="card-img-top d-flex align-items-end px-3">
+                                <i class="fa-solid fa-child-dress highlight-icon Is-Circle bgc-subtle mt-4 mb-3 p-3 me-3"
+                                    style="width: 30px; height: 30px;"></i>
+                                    <p class="h3-card-title_v2">黃小芳<br/><span class="small text-muted caption-text">攝影愛好者</span></p>
+                                    <p class=""></p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“剛搬到新城市人生地不熟，透過攝影揪團認識了很多朋友，也拍到了許多美麗的作品。感謝這個平台！”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - How to Start ********** -->
+        <section id="HowtoStart" class="bgc-secondary">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>如何開始</b></p>
+                <p class="text-center">只需要簡單四步驟，就能開啟你的揪團之旅</p>
+
+                <div class="row align-items-center justify-content-center text-center mt-5 p-3">
+                    <!-- card 1 -->
+                    <div class="col-12 col-md-3 mt-4">
+                        <div class="card border-color" style="position: relative;">
+                            <p class="cta-button Is-Circle Centered-on-X-Y p-2"
+                                style="position: absolute; left: -5%; top: -8%; width: 50px; height: 50px;">
+                                1</p>
+                            <div class="card-img-top">
+                                <i class="fa-solid fa-user-plus info-link Is-Circle bgc-subtle mt-4 mb-3 p-4"
+                                    style="width: 60px; height: 60px;"></i>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">註冊帳號</h5>
+                                <p class="card-text small text-muted">快速註冊並完善個人檔案<span
+                                        class="d-none d-md-inline">，讓其他人更了解你的興趣</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="col-12 col-md-3 mt-4">
+                        <div class="card border-color" style="position: relative;">
+                            <p class="cta-button Is-Circle Centered-on-X-Y p-2"
+                                style="position: absolute; left: -5%; top: -8%; width: 50px; height: 50px;">
+                                2</p>
+                            <div class="card-img-top">
+                                <i class="fa-solid fa-magnifying-glass highlight-icon Is-Circle bgc-subtle mt-4 mb-3 p-4"
+                                    style="width: 60px; height: 60px;"></i>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">探索活動</h5>
+                                <p class="card-text small text-muted">瀏覽各種有趣的活動<span
+                                        class="d-none d-md-inline">，或搜尋最適合你的揪團</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-12 col-md-3 mt-4">
+                        <div class="card border-color" style="position: relative;">
+                            <p class="cta-button Is-Circle Centered-on-X-Y p-2"
+                                style="position: absolute; left: -5%; top: -8%; width: 50px; height: 50px;">
+                                3</p>
+                            <div class="card-img-top">
+                                <i class="fa-solid fa-calendar-check info-link Is-Circle bgc-subtle mt-4 mb-3 p-4"
+                                    style="width: 60px; height: 60px;"></i>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">報名參加</h5>
+                                <p class="card-text small text-muted">看到喜歡的活動就報名吧<span
+                                        class="d-none d-md-inline">！或自己發起一場專屬活動</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="col-12 col-md-3 mt-4">
+                        <div class="card border-color" style="position: relative;">
+                            <p class="cta-button Is-Circle Centered-on-X-Y p-2"
+                                style="position: absolute; left: -5%; top: -8%; width: 50px; height: 50px;">
+                                4</p>
+                            <div class="card-img-top">
+                                <i class="fa-solid fa-champagne-glasses highlight-icon Is-Circle bgc-subtle mt-4 mb-3 p-4"
+                                    style="width: 60px; height: 60px;"></i>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title h3-card-title_v2">盡情享受</h5>
+                                <p class="card-text small text-muted">準時赴約，認識新朋友<span
+                                        class="d-none d-md-inline">，享受美好時光，創造難忘回憶</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center justify-content-center text-center mt-5 p-3">
+                    <button class="col-12 col-md-4 btn cta-button Is-Capsule btn-text py-3 px-5"
+                        type="button">立即註冊開始揪團</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Q and A ********** -->
+        <section id="QandA" class="bgc-secondary">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>常見問題</b></p>
+                <p class="text-center">有任何疑問嗎？這裡有一些常見問題的解答</p>
+
+                <div class="row align-items-center justify-content-center mt-5 p-3">
+                    <div class="accordion border-color" id="accordion">
+                        <!-- Accordion 1 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading1">
+                                <button class="accordion-button bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
+                                    aria-controls="collapse1">
+                                    如何開始使用揪伴？
+                                </button>
+                            </div>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    只需要點擊「註冊」按鈕，填寫基本資料並驗證電子郵件即可開始使用。註冊完成後，你就可以瀏覽活動、報名參加，或是發起自己的揪團活動。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 2 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    參加活動需要付費嗎？
+                                </button>
+                            </div>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    使用揪伴平台是完全免費的！不過，某些活動可能會有參加費用（如場地費、材料費等），這些費用由活動主揪設定，會在活動詳情頁面清楚標示。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 3 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    如果臨時無法參加已報名的活動怎麼辦？
+                                </button>
+                            </div>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    請盡早在活動頁面點擊「取消報名」，讓主揪有時間安排其他參加者。我們建議至少在活動開始前24小時取消，以示對主揪和其他參加者的尊重。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 4 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    如何確保活動的安全性？
+                                </button>
+                            </div>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    我們要求所有用戶進行實名認證，並提供評價系統讓參加者互相評分。建議首次參加時選擇公開場所的活動，並告知親友你的行程。如遇到任何問題，可隨時聯繫我們的客服團隊。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 5 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    我可以發起什麼類型的活動？
+                                </button>
+                            </div>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    幾乎任何合法且正當的興趣活動都可以！包括運動健身、戶外探險、藝文活動、美食聚會、學習交流等。我們鼓勵創意和多元性，只要遵守社群規範即可。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion 6 -->
+                        <div class="accordion-item border-color">
+                            <div class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed bgc-subtle h3-card-title_v2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                                    aria-controls="collapse6">
+                                    如果對某個活動或用戶有疑慮該怎麼辦？
+                                </button>
+                            </div>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    你可以使用「檢舉」功能向我們反映。我們的團隊會仔細審查每一個檢舉案件，並採取適當的措施。我們致力於維護一個安全、友善的社群環境。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center justify-content-center text-center mt-5 p-3">
+                    <p class="">還有其他問題嗎？</p>
+                    <button class="col-12 col-md-4 btn cta-button Is-Capsule btn-text py-3 px-5" type="button"
+                        data-bs-toggle="modal" data-bs-target="#ContactCSModal">聯繫客服</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Community ********** -->
+        <section id="Community">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>充滿活力的社群</b></p>
+                <p class="text-center">
+                    數以萬計的用戶選擇揪伴，一起創造美好回憶
+                </p>
+
+                <div class="row align-items-center justify-content-center text-center mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <i class="fa-regular fa-calendar-check fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2"><span class="counter_01">450</span>+ 場</div>
+                                <p class="small text-muted">年平均活動數</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <i class="fa-solid fa-user-group fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2"><span class="counter_02">8,000</span>+ 人</div>
+                                <p class="small text-muted">活躍揪團人數</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <i class="fa-regular fa-face-grin-stars fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2"><span class="counter_03">4.9</span> 星</div>
+                                <p class="small text-muted">活動事後評分</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <i class="fa-solid fa-bullseye fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2"><span class="counter_04">20</span>+ 個</div>
+                                <p class="small text-muted">每月主題活動</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - About US ********** -->
+        <section id="AboutUS">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>關於我們</b></p>
+                <p class="text-center">
+                    揪伴是一個致力於連結人與人的社群平台。<span
+                        class="d-none d-md-inline">我們相信，每個人都有自己的興趣與熱情，而找到志同道合的夥伴，能讓生活更加精彩。無論你想運動健身、探索自然、學習新技能，或是單純想認識新朋友，這裡都是你的最佳選擇。</span>
+                </p>
+
+                <div class="row align-items-center justify-content-center text-center mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <i class="fa-regular fa-heart fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2">我們的使命</div>
+                                <p class="small text-muted">打造一個溫暖、友善的社群環境，讓每個人都能輕鬆找到屬於自己的圈子，豐富生活體驗。</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <i class="fa-solid fa-users-viewfinder fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2">我們的願景</div>
+                                <p class="small text-muted">成為亞洲最受信賴的興趣社群平台，幫助千萬人建立有意義的連結與友誼。</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <i class="fa-regular fa-lightbulb fa-3x my-3"
+                                    style="color: var(--color-component-primary)"></i>
+                                <div class="h3-card-title_v2">我們的價值</div>
+                                <p class="small text-muted">真誠、開放、尊重與包容。我們相信多元的力量，歡迎所有人加入這個大家庭。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Our Advantages ********** -->
+        <section id="OurAdvantages" class="bgc-secondary">
+            <div class="container-fluid py-5">
+                <p class="h3-card-title text-center"><b>我們的優勢</b></p>
+                <p class="text-center">
+                    在快速變動的市場中，我們始終保持著對創新的熱情。<span
+                        class="d-none d-md-inline">從產品設計、品牌體驗到服務流程，每一次的調整，都只為了為用戶創造更大的價值。我們相信，創新不是一次性的突破，而是一種不斷疊積、持續優化的旅程。</span>
+                </p>
+                <div class="row mt-5">
+                    <!-- Left Area -->
+                    <div class="col-12 d-none col-md-6 d-md-block bg-center-cover"
+                        style="background-image: url(./assets/images/growth_01.jpg);"></div>
+
+                    <!-- Right Area -->
+                    <div class="col-12 col-md-6 py-3 px-5">
+                        <p class="text-c-main">
+                            <i class="fa-regular fa-star info-link me-1"></i>
+                            為你帶來優質的活動體驗...
+                        </p>
+
+                        <!-- card 1 -->
+                        <div class="horizontal-card d-flex align-items-start">
+                            <i class="fa-solid fa-headset emoji" style="color: var(--brand-gold);"></i>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">閃電規劃</div>
+                                <div class="horizontal-desc small text-muted">使用我們的智慧化模板，一鍵完成活動框架設計，節省您寶貴的時間。</div>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="horizontal-card d-flex align-items-start">
+                            <i class="fa-solid fa-person-circle-check emoji" style="color: var(--brand-gold);"></i>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">嚴謹的揪團審核</div>
+                                <div class="horizontal-desc small text-muted">每位團長都經過實名認證，大幅提升活動參與的安心度。</div>
+                            </div>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div class="horizontal-card d-flex align-items-start">
+                            <i class="fa-solid fa-robot emoji" style="color: var(--brand-gold);"></i>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">AI 智慧匹配</div>
+                                <div class="horizontal-desc small text-muted">透過智慧演算法，快速將您的活動推播給最適合的潛在團員。</div>
+                            </div>
+                        </div>
+
+                        <!-- card 4 -->
+                        <div class="horizontal-card d-flex align-items-start">
+                            <i class="fa-solid fa-headset emoji" style="color: var(--brand-gold);"></i>
+                            <div class="flex-grow-1">
+                                <div class="horizontal-title h3-card-title_v2">快速專業的客服支援</div>
+                                <div class="horizontal-desc small text-muted">專業線上客服，即時解決您的活動疑問與突發狀況。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ********** section - Our History ********** -->
+        <section id="OurHistory" class="bgc-secondary">
+            <div class="container py-5">
+                <p class="h3-card-title text-center"><b>我們的成長歷程</b></p>
+                <p class="text-center">從一個簡單的想法開始，到今天服務數萬名用戶，我們始終堅持初心</p>
+
+                <div class="timeline-section mt-5">
+                    <!-- timeline 1 -->
+                    <div class="row align-items-center timeline-section-pointer">
+                        <div class="col-md-6 mt-3 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s"
+                            data-wow-iteration="1">
+                            <div class="bg-center-cover"
+                                style="background-image: url(./assets/images/business/Business_01_1470-980.avif); height: 180px;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 wow animate__fadeInRightBig" data-wow-duration="1s"
+                            data-wow-delay="0s" data-wow-iteration="1">
+                            <div class="h3-card-title text-start info-link">全面成長 | 2023 - 2025</div>
+                            <p class="small text-muted">突破 10 萬活躍用戶，舉辦超過 5000 場活動，成為台灣最大的揪團平台。</p>
+                        </div>
+
+                    </div>
+
+                    <!-- timeline 2 -->
+                    <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+                        <div class="col-md-6 mt-3 wow animate__fadeInRightBig" data-wow-duration="1s"
+                            data-wow-delay="0s" data-wow-iteration="1">
+                            <div class="bg-center-cover"
+                                style="background-image: url(./assets/images/business/Business_02_1470-980.avif); height: 180px;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s"
+                            data-wow-iteration="1">
+                            <div class="h3-card-title text-start info-link">平台擴展 | 2018 - 2020</div>
+                            <p class="small text-muted">推出手機應用程式，新增即時通訊、地圖導航等功能，服務範圍擴展至全台。</p>
+                        </div>
+
+                    </div>
+
+                    <!-- timeline 3 -->
+                    <div class="row align-items-center timeline-section-pointer">
+                        <div class="col-md-6 mt-3 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s"
+                            data-wow-iteration="1">
+                            <div class="bg-center-cover"
+                                style="background-image: url(./assets/images/business/Business_03_1470-980.avif); height: 180px;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 wow animate__fadeInRightBig" data-wow-duration="1s"
+                            data-wow-delay="0s" data-wow-iteration="1">
+                            <div class="h3-card-title text-start info-link">社群萌芽 | 2015 - 2017</div>
+                            <p class="small text-muted">從小型運動揪團開始，逐步發展成多元化的興趣社群平台。</p>
+                        </div>
+
+                    </div>
+
+                    <!-- timeline 4 -->
+                    <div class="row align-items-center flex-row-reverse timeline-section-pointer">
+                        <div class="col-md-6 mt-3 wow animate__fadeInRightBig" data-wow-duration="1s"
+                            data-wow-delay="0s" data-wow-iteration="1">
+                            <div class="bg-center-cover"
+                                style="background-image: url(./assets/images/business/Business_04_1470-980.avif); height: 180px;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s"
+                            data-wow-iteration="1">
+                            <div class="h3-card-title text-start info-link">初創起步 | 2011 - 2013</div>
+                            <p class="small text-muted">網站正式上線，以「連結人與人」為使命，開始我們的揪團之旅。</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+        </section>
+    </div>
+
+    <div id="footer">
+        <!-- section - Navbar Footer -->
+        <section id="NavbarFooter">
+            <nav class="navbar_NavyGold">
+                <div class="container-fluid py-3">
+                    <div class="row align-items-start justify-content-center text-center text-md-start px-5 py-3">
+                        <!-- Block 1 -->
+                        <div class="col-12 col-md-3">
+                            <a class="navbar-brand h3-card-title" href="#">
+                                <i class="fa-brands fa-files-pinwheel fa-2x"></i>
+                                揪伴 JuBan
+                            </a>
+                            <p class="navbar-text">連結人與人，創造美好回憶</p>
+                        </div>
+
+                        <!-- Block 2 -->
+                        <div class="col-12 col-md-3 body-text">
+                            <p class="navbar-text m-0"><b>快速連結</b></p>
+                            <ul class="navbar-text NoDotBeforeListItems">
+                                <li class="mt-1"><a href="#Activities" class="NoBtmLine">探索活動</a></li>
+                                <li class="mt-1"><a href="#" class="NoBtmLine">發起活動</a></li>
+                                <li class="mt-1"><a href="#AboutUS" class="NoBtmLine">關於我們</a></li>
+                                <li class="mt-1"><a href="#QandA" class="NoBtmLine">常見問題</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Block 3 -->
+                        <div class="col-12 col-md-3 body-text">
+                            <p class="navbar-text m-0"><b>支援與服務</b></p>
+                            <ul class="navbar-text NoDotBeforeListItems">
+                                <li class="mt-1"><a href="#" class="NoBtmLine">使用條款</a></li>
+                                <li class="mt-1"><a href="#" class="NoBtmLine">隱私政策</a></li>
+                                <li class="mt-1"><a href="#" class="NoBtmLine">社群規範</a></li>
+                                <li class="mt-1"><a href="#" class="NoBtmLine">聯絡我們</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Block 4 -->
+                        <div class="col-12 col-md-3 body-text">
+                            <p class="navbar-text m-0"><b>聯絡資訊</b></p>
+                            <ul class="navbar-text NoDotBeforeListItems">
+                                <li class="mt-1"><i class="fa-regular fa-envelope me-2"></i>contact@juban.com</li>
+                                <li class="mt-1"><i class="fa-solid fa-phone me-2"></i>0800-123-456</li>
+                                <li class="mt-1"><i class="fa-regular fa-map me-2"></i>台北市信義區</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div
+                        class="d-flex justify-content-between align-items-center mt-auto mx-3 p-3 border-top navbar-text"> -->
+                    <div
+                        class="d-flex flex-column justify-content-center flex-md-row justify-content-md-between align-items-center mt-auto mx-3 p-3 border-top navbar-text">
+                        <p style="margin-bottom: 0px;">© 2025 揪伴 JuBan. All rights reserved.</p>
+                        <div class="text-end navbar-text">
+                            <a href="#"><i class="fa-brands fa-line"></i></a>
+                            <a href="#"><i class="fa-brands fa-apple"></i></a>
+                            <a href="#"><i class="fa-brands fa-android"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </div>
+
+
+    <!-- ********** -->
+    <!-- section - Modal: Contact Customer Service -->
+    <div class="modal fade" id="ContactCSModal" tabindex="-1" aria-labelledby="ContactCSModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 h3-card-title_v2" id="ContactCSModalLabel"
+                        style="color: var(--brand-navy);">聯繫客服</h1>
+                    <button class="btn-close border-color bgc-secondary" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="my-3 text-start">
+                        <label for="form-label">您的姓名</label>
+                        <input type="text" class="form-control form-control-lg border-color bgc-secondary"
+                            placeholder="請輸入您的姓名" required>
+                    </div>
+                    <div class="my-3 text-start">
+                        <label for="form-label">電子信箱</label>
+                        <input type="email" class="form-control form-control-lg border-color bgc-secondary"
+                            placeholder="example@email.com">
+                    </div>
+                    <div class="my-3 text-start">
+                        <label for="form-label">連絡電話</label>
+                        <input type="tel" class="form-control form-control-lg border-color bgc-secondary" id="" name=""
+                            placeholder="02-1234-5678" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+                    </div>
+                    <div class="my-3 text-start">
+                        <label for="form-label">問題類型</label>
+                        <select name="" id="" class="form-select form-select-lg border-color bgc-secondary">
+                            <option value="" selected disabled>--- 請選擇問題類型 ---</option>
+                            <option value="account">帳號相關問題</option>
+                            <option value="activity">活動相關問題</option>
+                            <option value="payment">付款相關問題</option>
+                            <option value="report">檢舉與申訴</option>
+                            <option value="technical">技術問題</option>
+                            <option value="other">其他問題</option>
+                        </select>
+                    </div>
+                    <div class="my-3 text-start">
+                        <label for="form-label">訊息內容</label>
+                        <textarea name="" id="" rows=5 class="form-control form-control-lg border-color bgc-secondary"
+                            placeholder="請詳細描述您的問題，我們會盡快回覆您..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn Is-Capsule border-color bgc-secondary" type="button"
+                        data-bs-dismiss="modal">取消</button>
+                    <button class="btn cta-button Is-Capsule" type="button">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ********** -->
+    <!-- For #ActivityContact: 串接台灣縣市 -->
+    <script>
+        $(function () {
+            $.ajax({
+                type: "GET",
+                url: "./assets/vendor/TaiwanAddressCityAreaRoadChineseEnglishJSON-master/CityCountyData.json",
+                dataType: "json",
+                success: showData,
+                error: function () {
+                    Swal.fire({
+                        title: "連線錯誤",
+                        text: "請檢查您的連線是否正確。",
+                        icon: "error"
+                    });
+
+                }
+            });
+        });
+
+        function showData(data) {
+            // console.log(data);
+
+            $("#TaiwanCity").empty();
+            $("#TaiwanCity").append('<option value="" selected disabled>--- 活動區域 ---</option>');
+            data.forEach(function (item, key) {
+                // console.log(item);
+
+                let strHTML = `<option value="">${item.CityName}</option>`
+                $("#TaiwanCity").append(strHTML);
+            });
+
+        }
+    </script>
+
+    <!-- 數字計數增加的動畫效果 -->
+    <!-- https://github.com/bfintal/Counter-Up2 -->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script>
+        const counterUp = window.counterUp.default
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counterUp(el, {
+                        // 跑動秒數
+                        duration: 1000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+        const el_01 = document.querySelector('.counter_01')
+        IO.observe(el_01)
+        const el_02 = document.querySelector('.counter_02')
+        IO.observe(el_02)
+        const el_03 = document.querySelector('.counter_03')
+        IO.observe(el_03)
+        const el_04 = document.querySelector('.counter_04')
+        IO.observe(el_04)
+    </script>
+</body>
+
+</html>

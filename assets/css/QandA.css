@@ -1,0 +1,11 @@
+/* ============================== */
+/* QandA */
+/* ============================== */
+.accordion-button:not(.collapsed) {
+    color: var(--brand-navy);
+    background-color: var(--color-component-primary);
+}
+
+.accordion-button:focus {
+    border-color: var(--color-border);
+}

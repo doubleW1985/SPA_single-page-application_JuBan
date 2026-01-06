@@ -1,0 +1,42 @@
+/* 繪製時間軸的 "中線" 用 (搭配偽元素) */
+.timeline-section {
+    position: relative;
+}
+
+.timeline-section::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: var(--color-text-tertiary);
+    top: 10px;
+    bottom: 10px;
+    /* 達成往右邊推，再拉回來置中的效果 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 繪製時間軸的 "中線上的點" 用 (搭配偽元素) */
+.timeline-section-pointer {
+    position: relative;
+}
+
+.timeline-section-pointer::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--brand-gold);
+    border: 2px solid var(--color-text-tertiary);
+    top: 78px;
+    /* 達成往右邊推，再拉回來置中的效果 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .timeline-section::before,
+    .timeline-section-pointer::before {
+        display: none;
+    }
+}

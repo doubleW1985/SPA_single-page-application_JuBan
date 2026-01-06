@@ -1,0 +1,184 @@
+/*
+ * ==========================================================
+ * 網站配色方案 (NavyGold.css)
+ * 主題：專業、優雅、不沉重 (深藍/金色/功能色)
+ * 包含：品牌核心色、高飽和功能色、淺色模式、深色模式定義。
+ * ==========================================================
+*/
+
+
+/* ⚓ 1. 品牌與元件通用核心色 (:root) */
+:root {
+    /* --- 品牌核心色 (Brand Core Colors) --- */
+    --brand-navy: #112250;
+    /* ROYAL BLUE - 網站主色 */
+    --brand-gold: #E0C58F;
+    /* QUICKSAND - 強調色 */
+    --brand-sapphire: #3C507D;
+    /* SAPPHIRE - 輔助主色 */
+    --brand-dark-gold: #C7A56F;
+    /* 輔助強調色 (Hover/Active) */
+
+    /* --- 🎨 高飽和度功能色 (Functional Colors) --- */
+    /* 這些顏色保持高飽和度，跨越 Light/Dark Mode，用於強烈視覺引導 */
+    --color-functional-highlight: #A951E7;
+    /* 突出/數據/提醒 (紫羅蘭色) */
+    --color-functional-active: #52D08E;
+    /* 活躍狀態/成功 (綠色) */
+    --color-functional-alert: #FF69B4;
+    /* 強烈警示/促銷 (粉紅色) */
+    --color-functional-info: #00BFFF;
+    /* 次要連結/資訊 (亮青藍色) */
+}
+
+
+/* ☀️ 2. 淺色模式顏色定義 (Light Mode) */
+body[data-theme='light'] {
+    /* 背景與基底色 */
+    --color-bgc-primary: #F5F0E9;
+    /* 主要背景色 (米白色) */
+    --color-bgc-secondary: #FFFFFF;
+    /* 次要背景色 (卡片、元件背景) */
+    --color-bgc-subtle: #EDE8E0;
+    /* 細微背景色 (區塊分隔) */
+    --color-border: #D9D2C6;
+    /* 邊框顏色 */
+
+    /* 文字顏色 */
+    --color-text-c-main: #1A1A1A;
+    --color-text-c-secondary: #4A4A4A;
+    --color-text-tertiary: #6C6C6C;
+    --color-text-accent: var(--brand-navy);
+    /* 強調文字使用主品牌色 */
+    --color-component-text: #1A1A1A;
+    /* 元件上的深色文字 */
+
+    /* 元件與狀態色 */
+    --color-component-primary: var(--brand-gold);
+    /* CTA 按鈕/主要元件背景 */
+    --color-success: var(--color-functional-active);
+    --color-warning: #F0AD4E;
+    /* 一般警示 (黃/橙色) */
+    --color-error: #D9534F;
+    /* 錯誤/失敗 (紅色) */
+}
+
+
+/* 🌙 3. 深色模式顏色定義 (Dark Mode) */
+body[data-theme='dark'] {
+    /* 背景與基底色 */
+    --color-bgc-primary: #111A2D;
+    /* 主要背景色 (非常深的藍色) */
+    --color-bgc-secondary: #1F2A40;
+    /* 次要背景色 (卡片、元件背景) */
+    --color-bgc-subtle: var(--brand-sapphire);
+    /* 細微背景色 (輔助品牌色) */
+    --color-border: #4D5E85;
+    /* 邊框顏色 */
+
+    /* 文字顏色 */
+    --color-text-c-main: #F5F0E9;
+    --color-text-c-secondary: #CFCBC4;
+    --color-text-tertiary: #9AA3B4;
+    --color-text-accent: var(--brand-gold);
+    /* 強調文字使用主品牌金色 */
+    --color-component-text: #1A1A1A;
+    /* 元件上的深色文字 (例如金色按鈕上的文字) */
+
+    /* 元件與狀態色 */
+    --color-component-primary: var(--brand-gold);
+    /* CTA 按鈕/主要元件背景 */
+    --color-success: var(--color-functional-active);
+    --color-warning: #F5C77D;
+    /* 一般警示 (淺色黃/橙色，提升對比) */
+    --color-error: #E5827D;
+    /* 錯誤/失敗 (柔和紅色，提升對比) */
+}
+
+
+/* ==========================================================
+ * 4. 基礎樣式與變數應用 (Utility Classes)
+ * 這些類別將 CSS 變數映射到實際應用中，通常會搭配 Tailwind 或其他框架使用。
+ * ==========================================================
+*/
+
+/* 背景類別 */
+.bgc-primary {
+    background-color: var(--color-bgc-primary);
+}
+
+.bgc-secondary {
+    background-color: var(--color-bgc-secondary);
+}
+
+.bgc-subtle {
+    background-color: var(--color-bgc-subtle);
+}
+
+.navbar_NavyGold {
+    background-color: var(--brand-navy);
+}
+
+/* 導覽列固定使用主品牌深藍 */
+
+/* 文字類別 */
+.text-c-main {
+    color: var(--color-text-c-main);
+}
+
+.text-c-secondary {
+    color: var(--color-text-c-secondary);
+}
+
+.text-accent {
+    color: var(--color-text-accent);
+}
+
+.navbar-text {
+    color: var(--color-bgc-primary);
+}
+
+/* 導覽列文字使用淺色背景色以確保對比 */
+
+/* 邊框 */
+.border-color {
+    border-color: var(--color-border);
+}
+
+/* CTA 按鈕 - 使用品牌金色 */
+.cta-button {
+    background-color: var(--color-component-primary);
+    color: var(--color-component-text);
+    transition: all 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--brand-dark-gold);
+}
+
+/* 功能色應用 - 圖標/連結/徽章 */
+.highlight-icon {
+    color: var(--color-functional-highlight);
+}
+
+.info-link {
+    color: var(--color-functional-info);
+}
+
+.active-status {
+    background-color: var(--color-functional-active);
+    color: var(--color-bgc-primary);
+}
+
+.alert-badge {
+    background-color: var(--color-functional-alert);
+    color: var(--color-bgc-secondary);
+}
+
+.error-message {
+    color: var(--color-error);
+}
+
+.warning-message {
+    color: var(--color-warning);
+}

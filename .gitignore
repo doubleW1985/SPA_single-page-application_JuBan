@@ -1,0 +1,15 @@
+# 1. 排除筆記檔案
+note.md
+
+# 2. 排除編輯器設定
+.vscode/
+
+# 3. 排除 macOS 的系統快取
+.DS_Store
+
+# 4. 排除 Windows 的縮圖快取
+Thumbs.db
+
+# 5. 未來防範
+node_modules/
+.env

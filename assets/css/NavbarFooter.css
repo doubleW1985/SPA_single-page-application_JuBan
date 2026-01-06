@@ -1,0 +1,18 @@
+/* ============================== */
+/* NavbarFooter_Change text color */
+/* ============================== */
+.navbar-text a,
+.navbar-text a:focus,
+.navbar-text a:hover {
+    color: var(--color-bgc-primary);
+}
+
+
+/* ============================== */
+/* NavbarFooter_Change border-top color */
+/* ============================== */
+.border-top {
+    border-top-color: var(--color-bgc-primary) !important;
+}
+
+

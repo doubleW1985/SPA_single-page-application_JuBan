@@ -1,0 +1,151 @@
+/* 讓 1rem = 16px，保持標準瀏覽器行為 */
+html {
+    font-size: 100%;
+    /* 16px */
+}
+
+
+/* ============================================== */
+/* 桌面裝置優先 (Desktop First) 字體設定 */
+/* 所有未在 @media 內定義的，都將使用桌面字體大小 */
+/* ============================================== */
+
+/* H1: 主標題 (Hero Title) */
+.h1-hero-title {
+    font-size: 5.5rem;
+    /* 桌面預設: 約 88px */
+    line-height: 1.1;
+    font-weight: 700;
+    /* 建議主標題使用粗體 */
+}
+
+/* H2: 區塊標題 */
+.h2-section-title {
+    font-size: 2.5rem;
+    /* 桌面預設: 約 40px */
+    line-height: 1.2;
+    font-weight: 600;
+    /* 建議區塊標題使用中粗體 */
+}
+
+/* H3/Card Title: 卡片/小區塊標題 */
+.h3-card-title {
+    font-size: 1.625rem;
+    /* 桌面預設: 約 26px */
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.h3-card-title_v2 {
+    font-size: 1.15rem;
+    /* 桌面預設: 約 18.4px */
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+/* Body/List Text: 內文/清單文字 */
+.body-text {
+    font-size: 1.125rem;
+    /* 桌面預設: 約 18px */
+    line-height: 1.6;
+    /* 確保閱讀舒適 */
+}
+
+/* Button Text: 行動呼籲 (CTA) */
+.btn-text {
+    font-size: 1.25rem;
+    /* 桌面預設: 約 20px */
+    line-height: 1;
+    font-weight: 500;
+}
+
+/* Caption/Tag: 附註/標籤文字 */
+.caption-text {
+    font-size: 0.95rem;
+    /* 桌面預設: 約 15.2px */
+    line-height: 1.6;
+}
+
+/* ============================================== */
+/* 平板電腦尺寸 (Tablet) */
+/* 螢幕寬度小於 1200px 時套用 */
+/* ============================================== */
+@media (max-width: 1199px) {
+    .h1-hero-title {
+        font-size: 3.5rem;
+        /* 調整為 56px */
+    }
+
+    .h2-section-title {
+        font-size: 2.25rem;
+        /* 調整為 36px */
+    }
+
+    .h3-card-title {
+        font-size: 1.5rem;
+        /* 調整為 24px */
+    }
+
+    .h3-card-title_v2 {
+        font-size: 1.05rem;
+        /* 調整為約 16.8px (接近 Body Text 尺寸) */
+    }
+
+    .body-text {
+        font-size: 1.0625rem;
+        /* 調整為 17px */
+    }
+
+    .btn-text {
+        font-size: 1.125rem;
+        /* 調整為 18px */
+    }
+
+    .caption-text {
+        font-size: 0.85rem;
+        /* 調整為約 13.6px (略小於 Body Text) */
+        line-height: 1.5;
+    }
+}
+
+/* ============================================== */
+/* 行動裝置尺寸 (Mobile) */
+/* 螢幕寬度小於 768px 時套用 */
+/* ============================================== */
+@media (max-width: 767px) {
+    .h1-hero-title {
+        font-size: 2.25rem;
+        /* 調整為 36px */
+    }
+
+    .h2-section-title {
+        font-size: 1.75rem;
+        /* 調整為 28px */
+    }
+
+    .h3-card-title {
+        font-size: 1.25rem;
+        /* 調整為 20px */
+    }
+
+    .h3-card-title_v2 {
+        font-size: 1rem;
+        /* 調整為 16px (與 Body Text 相同，但透過 font-weight 保持層次) */
+    }
+
+    /* 內文維持 1rem (16px) 是行動裝置的最佳實踐 */
+    .body-text {
+        font-size: 1rem;
+    }
+
+    .btn-text {
+        font-size: 1rem;
+        /* 調整為 16px */
+    }
+
+    .caption-text {
+        font-size: 0.75rem;
+        /* 調整為 12px (確保在小螢幕上足夠小) */
+        line-height: 1.4;
+    }
+}

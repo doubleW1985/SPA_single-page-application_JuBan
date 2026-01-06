@@ -1,0 +1,156 @@
+/*  */
+/* Navbar_Change text color */
+/*  */
+a.navbar-brand,
+a.navbar-brand:hover,
+a.navbar-brand:focus,
+a.navbar-brand:active,
+a.navbar-brand:visited,
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link,
+.nav-link,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link:visited {
+    color: var(--color-bgc-primary);
+}
+
+
+/*  */
+/* Navbar_Change the color and border of the hamburger menu */
+/*  */
+.navbar_NavyGold .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F5F0E9' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* 邊框：使用目標顏色 */
+.navbar-toggler:focus {
+    border-color: var(--color-bgc-primary) !important;
+    /* 陰影：使用目標顏色（半透明） */
+    box-shadow: 0 0 0 0.25rem rgba(216, 209, 197, 0.5) !important;
+}
+
+/* 確保在非 :focus 狀態下，展開按鈕的邊框顏色也是目標色 */
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--color-bgc-primary) !important;
+}
+
+
+/*  */
+/* Make the border into an oval shape. */
+/*  */
+.Is-Capsule {
+    border-radius: 999px;
+}
+
+
+/*  */
+/* HeroSection_ */
+/*  */
+.carousel-item {
+    height: 90vh;
+    position: relative;
+}
+
+.carousel-item::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(0deg, rgba(17, 34, 80, 0), rgba(17, 34, 80, 1));
+}
+
+.carousel-caption {
+    bottom: 40%;
+}
+
+@media (max-width: 767px) {
+
+    .carousel-item::before {
+        /* background-image: linear-gradient(180deg, rgba(red, 0), rgba(yellow, 0)); */
+        background-image: none;
+        background-color: var(--brand-navy);
+        border-radius: 0 0 90% 90%;
+    }
+
+    .carousel-item {
+        height: 65vh !important;
+        background-image: none !important;
+    }
+
+    .carousel-indicators,
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+}
+
+/*  */
+/* 針對背景圖片，居中並完全覆蓋元素。 */
+/* For a background image, center it and scale it to fully cover the element. */
+/*  */
+.bg-center-cover {
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*  */
+/* For card */
+/*  */
+.horizontal-card {
+    background: var(--color-bgc-secondary);
+    border: 2px solid var(--color-border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.horizontal-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* .horizontal-card .emoji {
+    border: 2px solid #f3f4f6;
+} */
+
+.horizontal-title {
+    color: var(--color-text-c-main);
+}
+
+.horizontal-desc {
+    /* color: var(--color-text-c-secondary); */
+    color: var(--color-text-tertiary);
+}
+
+
+.horizontal-card {
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.horizontal-card .emoji {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    /* 當容器空間不足時，彈性項目（Flex Item）收縮的比例或能力：完全不會收縮。無論容器空間多小，它都會保持其原始的或設定好的寬度 (width) 和高度 (height)。 */
+    flex-shrink: 0;
+
+    /* border-radius: 12px; */
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.horizontal-title {
+    /* font-size: 1.15rem; */
+    /* font-weight: 700; */
+    margin-bottom: 8px;
+}
+
+/* .horizontal-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+} */

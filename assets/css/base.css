@@ -1,0 +1,111 @@
+/* ============================== */
+/* Make the shape into an oval. */
+/* ============================== */
+.Is-Capsule {
+    border-radius: 999px;
+}
+
+
+/* ============================== */
+/* Make the shape into a circle. */
+/* ============================== */
+.Is-Circle {
+    border-radius: 50%;
+}
+
+
+/* ============================== */
+/* Vertical centering & Horizontal centering. */
+/* ============================== */
+.Centered-on-X-Y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============================== */
+/* 針對背景圖片，居中並完全覆蓋元素。 */
+/* For a background image, center it and scale it to fully cover the element. */
+/* ============================== */
+.bg-center-cover {
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* ============================== */
+/* Make the dots in front of the list disappear. */
+/* ============================== */
+.NoDotBeforeListItems {
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+/* ============================== */
+/* Make the bottom line of hyperlinks disappear. */
+/* ============================== */
+.NoBtmLine {
+    text-decoration: none;
+}
+
+
+/* ============================== */
+/* For card */
+/* ============================== */
+.horizontal-card {
+    background: var(--color-bgc-secondary);
+    border: 2px solid var(--color-border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.horizontal-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* .horizontal-card .emoji {
+    border: 2px solid #f3f4f6;
+} */
+
+.horizontal-title {
+    color: var(--color-text-c-main);
+}
+
+.horizontal-desc {
+    /* color: var(--color-text-c-secondary); */
+    color: var(--color-text-tertiary);
+}
+
+
+.horizontal-card {
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.horizontal-card .emoji {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    /* 當容器空間不足時，彈性項目（Flex Item）收縮的比例或能力：完全不會收縮。無論容器空間多小，它都會保持其原始的或設定好的寬度 (width) 和高度 (height)。 */
+    flex-shrink: 0;
+
+    /* border-radius: 12px; */
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.horizontal-title {
+    /* font-size: 1.15rem; */
+    /* font-weight: 700; */
+    margin-bottom: 8px;
+}
+
+/* .horizontal-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+} */
